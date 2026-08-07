@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder - זוג צעיר עם קסדות בנייה</title>
+  <desc id="desc">זוג צעיר עם קסדות בנייה על מגרש. מידות מומלצות: 1200x800px, פורמט WebP.</desc>
+  <rect width="1200" height="800" fill="#eef2ef"/>
+  <rect x="12" y="12" width="1176" height="776" fill="none" stroke="#1c7a5e" stroke-width="3" stroke-dasharray="14 10" rx="18"/>
+  <g transform="translate(600,330)" fill="none" stroke="#1c7a5e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-90" y="-64" width="180" height="128" rx="12"/>
+    <circle cx="0" cy="-4" r="36"/>
+    <path d="M -50 -64 L -30 -90 L 30 -90 L 50 -64"/>
+  </g>
+  <text x="600" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#12211c" font-weight="bold">זוג צעיר עם קסדות בנייה על מגרש</text>
+  <text x="600" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5b6560">Placeholder image — להחלפה</text>
+  <text x="600" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5b6560">מומלץ: זוג צעיר, קסדות בנייה, מגרש פתוח</text>
+  <text x="600" y="554" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8a9490">מידות מומלצות: 1200x800 · WebP</text>
+</svg>

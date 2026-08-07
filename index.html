@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ליווי מכירות | ליווי אישי במכרזים והגרלות רמ"י</title>
+  <meta name="description" content="ליווי אישי ומקצועי בדרך לקרקע באמצעות מכרזים והגרלות רמ&quot;י, משלב בדיקת זכאות ועד להגשה.">
+
+  <!--
+    TODO (מפתח): להוסיף כאן בעתיד תגי Meta / Open Graph נוספים, וכן קוד
+    Google Analytics / Meta Pixel כאשר יאושרו. אין להוסיף כרגע קוד מעקב.
+  -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== Skip Link (Accessibility) ==================== -->
+  <a class="sales-skip-link" href="#sales-main">דלגו לתוכן הראשי</a>
+
+  <!-- ==================== Header / Navigation ==================== -->
+  <header class="sales-header" id="sales-header">
+    <div class="sales-container sales-header__inner">
+      <a href="#sales-hero" class="sales-header__logo">
+        <span class="sales-header__logo-mark" aria-hidden="true">ל</span>
+        <span class="sales-header__logo-text">
+          ליווי מכירות
+          <small>קרקע · בית · עתיד</small>
+        </span>
+      </a>
+
+      <nav class="sales-nav" id="sales-nav" aria-label="ניווט ראשי">
+        <ul class="sales-nav__list">
+          <li><a href="#sales-how" class="sales-nav__link">איך זה עובד</a></li>
+          <li><a href="#sales-tracks" class="sales-nav__link">מסלולים</a></li>
+          <li><a href="#sales-faq" class="sales-nav__link">שאלות נפוצות</a></li>
+          <li><a href="#sales-contact" class="sales-nav__link">צור קשר</a></li>
+        </ul>
+      </nav>
+
+      <div class="sales-header__actions">
+        <a href="#sales-lead-form" class="sales-btn sales-btn--primary sales-btn--sm sales-js-scroll-to">
+          בדקו זכאות
+        </a>
+        <button type="button" class="sales-header__burger" id="sales-burger" aria-expanded="false" aria-controls="sales-mobile-nav" aria-label="פתיחת תפריט ניווט">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav panel -->
+    <nav class="sales-mobile-nav" id="sales-mobile-nav" aria-label="ניווט במובייל" hidden>
+      <ul class="sales-mobile-nav__list">
+        <li><a href="#sales-how" class="sales-mobile-nav__link">איך זה עובד</a></li>
+        <li><a href="#sales-tracks" class="sales-mobile-nav__link">מסלולים</a></li>
+        <li><a href="#sales-faq" class="sales-mobile-nav__link">שאלות נפוצות</a></li>
+        <li><a href="#sales-contact" class="sales-mobile-nav__link">צור קשר</a></li>
+        <li><a href="#sales-lead-form" class="sales-btn sales-btn--primary sales-btn--block sales-js-scroll-to">בדקו זכאות</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="sales-main" id="sales-main">
+
+    <!-- ==================== 1. Hero ==================== -->
+    <section class="sales-hero" id="sales-hero">
+      <div class="sales-container sales-hero__inner">
+
+        <div class="sales-hero__content">
+          <h1 class="sales-hero__title">
+            הבית שאתם חולמים עליו מתחיל בהחלטה אחת נכונה.
+          </h1>
+          <p class="sales-hero__subtitle">
+            אנחנו דואגים לתהליך — אתם מתמקדים בעתיד שלכם.
+          </p>
+          <p class="sales-hero__desc">
+            ליווי אישי ומקצועי בדרך לקרקע באמצעות מכרזים והגרלות רמ"י, משלב בדיקת זכאות ועד להגשה.
+          </p>
+
+          <ul class="sales-hero__checklist">
+            <li>
+              <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              בדיקת זכאות ללא התחייבות
+            </li>
+            <li>
+              <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              בדיקת והכנת המסמכים
+            </li>
+            <li>
+              <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ליווי עו"ד לאורך התהליך
+            </li>
+            <li>
+              <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ליווי אישי עד להגשה
+            </li>
+          </ul>
+
+          <div class="sales-hero__actions">
+            <a href="#sales-lead-form" class="sales-btn sales-btn--primary sales-btn--lg sales-js-scroll-to">
+              בדקו את הזכאות שלכם ללא התחייבות ←
+            </a>
+          </div>
+          <p class="sales-hero__caption">השאירו פרטים ונחזור אליכם לשיחה ראשונית.</p>
+        </div>
+
+        <div class="sales-hero__media">
+          <!-- TODO: להחליף בתמונה אמיתית — images/hero/couple-on-plot-placeholder.svg
+               תמונה מבוקשת: זוג/משפחה צעירה עומדים על מגרש ומביטים קדימה,
+               לא מביטים למצלמה. אין להשתמש בתמונות טפסים/משרד/עו"ד. -->
+          <img
+            src="images/hero/couple-on-plot-placeholder.svg"
+            alt="זוג צעיר עומד על מגרש ומביט קדימה אל העתיד, לא מביט למצלמה"
+            class="sales-hero__image"
+            width="1200" height="900"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. למי השירות מתאים? ==================== -->
+    <section class="sales-section sales-audience" id="sales-audience">
+      <div class="sales-container">
+        <div class="sales-section-head">
+          <h2 class="sales-heading-lg">אולי גם אתם בדרך לקרקע משלכם.</h2>
+          <p class="sales-audience__intro">השירות מתאים ל:</p>
+        </div>
+
+        <div class="sales-audience__grid">
+          <div class="sales-card sales-audience__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 2 3 7v2h18V7l-9-5Zm-7 9v9h4v-6h6v6h4v-9"/></svg>
+            </div>
+            <p class="sales-card__title">זוגות ומשפחות שרוצים לבחון אפשרות לקרקע לבית</p>
+          </div>
+
+          <div class="sales-card sales-audience__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 4h16v16H4V4Zm4 4h8M8 12h8M8 16h5"/></svg>
+            </div>
+            <p class="sales-card__title">זכאים המתעניינים במכרזים והגרלות של רמ"י</p>
+          </div>
+
+          <div class="sales-card sales-audience__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 8v4l3 2M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z"/></svg>
+            </div>
+            <p class="sales-card__title">אנשים שלא רוצים לבזבז שעות על בירוקרטיה</p>
+          </div>
+
+          <div class="sales-card sales-audience__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/></svg>
+            </div>
+            <p class="sales-card__title">משרתי מילואים שמעדיפים שמישהו אחר יטפל בתהליך עבורם</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. אזור מיוחד למשרתי מילואים ==================== -->
+    <section class="sales-section sales-reservists" id="sales-reservists">
+      <div class="sales-container sales-reservists__inner">
+        <div class="sales-reservists__content">
+          <p class="sales-reservists__top-message">
+            אתם שומרים על המדינה.<br>אנחנו נשמור על הדרך שלכם הביתה.
+          </p>
+          <h2 class="sales-heading-lg sales-heading-lg--light">משרתים במילואים?</h2>
+          <p class="sales-reservists__text">
+            בין השירות, העבודה והמשפחה, לא תמיד יש זמן להתעסק במסמכים, טפסים ומועדים.
+          </p>
+          <p class="sales-reservists__text">
+            לכן בנינו עבורכם מעטפת מיוחדת — עם ליווי אישי ומחיר מיוחד למשרתי מילואים.
+          </p>
+          <p class="sales-reservists__tag">
+            אתם עושים את שלכם.<br>אנחנו נדאג שהבירוקרטיה לא תעמוד בדרך.
+          </p>
+          <a href="#sales-lead-form" class="sales-btn sales-btn--primary sales-btn--lg sales-js-scroll-to">
+            בדיקת זכאות למשרתי מילואים ←
+          </a>
+        </div>
+        <div class="sales-reservists__media">
+          <!-- TODO: להחליף בתמונה אמיתית — images/sections/reservist-family-placeholder.svg -->
+          <img
+            src="images/sections/reservist-family-placeholder.svg"
+            alt="משרת מילואים חוזר הביתה למשפחתו"
+            class="sales-reservists__image"
+            width="1200" height="800" loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. למה לבחור בנו? ==================== -->
+    <section class="sales-section sales-why-us" id="sales-why-us">
+      <div class="sales-container">
+        <div class="sales-section-head">
+          <h2 class="sales-heading-lg">למה לבחור בנו?</h2>
+        </div>
+
+        <div class="sales-why-us__grid">
+          <div class="sales-card sales-why-us__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/></svg>
+            </div>
+            <h3 class="sales-card__title">עו"ד מלווה</h3>
+            <p class="sales-card__text">ליווי מקצועי לאורך התהליך.</p>
+          </div>
+          <div class="sales-card sales-why-us__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 8v4l3 2M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z"/></svg>
+            </div>
+            <h3 class="sales-card__title">חוסכים זמן</h3>
+            <p class="sales-card__text">פחות התעסקות, פחות רדיפה אחרי מסמכים.</p>
+          </div>
+          <div class="sales-card sales-why-us__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6 4h9l5 5v11a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm8 0v5h5M9 13h6M9 17h6"/></svg>
+            </div>
+            <h3 class="sales-card__title">תיק מסודר</h3>
+            <p class="sales-card__text">בדיקה והכנת המסמכים לפני ההגשה.</p>
+          </div>
+          <div class="sales-card sales-why-us__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 9c0-3.3 3.1-6 7-6s7 2.7 7 6"/></svg>
+            </div>
+            <h3 class="sales-card__title">יחס אישי</h3>
+            <p class="sales-card__text">לא מוקד שירות — ליווי אישי.</p>
+          </div>
+          <div class="sales-card sales-why-us__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
+            </div>
+            <h3 class="sales-card__title">זמינות גבוהה</h3>
+            <p class="sales-card__text">יש למי לפנות כשעולה שאלה.</p>
+          </div>
+          <div class="sales-card sales-why-us__card">
+            <div class="sales-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="sales-card__title">עד ההגשה</h3>
+            <p class="sales-card__text">לא משאירים אתכם באמצע.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. איך זה עובד? ==================== -->
+    <section class="sales-section sales-how" id="sales-how">
+      <div class="sales-container">
+        <div class="sales-section-head">
+          <h2 class="sales-heading-lg">איך זה עובד?</h2>
+        </div>
+
+        <ol class="sales-timeline">
+          <li class="sales-timeline__step">
+            <span class="sales-timeline__number">01</span>
+            <h3 class="sales-timeline__title">משאירים פרטים</h3>
+          </li>
+          <li class="sales-timeline__step">
+            <span class="sales-timeline__number">02</span>
+            <h3 class="sales-timeline__title">שיחת היכרות ובדיקת זכאות</h3>
+          </li>
+          <li class="sales-timeline__step">
+            <span class="sales-timeline__number">03</span>
+            <h3 class="sales-timeline__title">מכינים את התיק</h3>
+          </li>
+          <li class="sales-timeline__step">
+            <span class="sales-timeline__number">04</span>
+            <h3 class="sales-timeline__title">מגישים וממשיכים בליווי</h3>
+          </li>
+        </ol>
+
+        <p class="sales-how__closing">זה פשוט יותר ממה שחשבתם.</p>
+      </div>
+    </section>
+
+    <!-- ==================== 9. המסלולים ==================== -->
+    <section class="sales-section sales-tracks" id="sales-tracks">
+      <div class="sales-container">
+        <div class="sales-section-head">
+          <h2 class="sales-heading-lg">המסלולים שלנו</h2>
+        </div>
+
+        <div class="sales-tracks__grid">
+
+          <!-- Track: Basic -->
+          <article class="sales-pricing-card">
+            <span class="sales-pricing-card__tier sales-pricing-card__tier--basic">בסיס</span>
+            <h3 class="sales-pricing-card__name">בסיס</h3>
+            <p class="sales-pricing-card__tagline">למי שרוצה הכוונה מקצועית לאורך ההגשה.</p>
+
+            <div class="sales-pricing-card__prices">
+              <p class="sales-pricing-card__price-row">
+                <span>מחיר רגיל</span><span>4,000 ₪</span>
+              </p>
+              <p class="sales-pricing-card__price-row">
+                <span>מחיר מילואימניקים</span><span>3,500 ₪</span>
+              </p>
+              <p class="sales-pricing-card__price-row sales-pricing-card__price-row--launch">
+                <span>מחיר השקה</span><span class="sales-pricing-card__price-main">2,990 ₪</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- Track: Premium (featured) -->
+          <article class="sales-pricing-card sales-pricing-card--featured">
+            <span class="sales-pricing-card__badge">הכי מבוקש</span>
+            <span class="sales-pricing-card__tier sales-pricing-card__tier--premium">פרימיום</span>
+            <h3 class="sales-pricing-card__name">פרימיום</h3>
+            <p class="sales-pricing-card__tagline">למי שרוצה מעטפת רחבה יותר ולא רוצה להתעסק לבד בפרטים.</p>
+
+            <div class="sales-pricing-card__prices">
+              <p class="sales-pricing-card__price-row">
+                <span>מחיר רגיל</span><span>8,000 ₪</span>
+              </p>
+              <p class="sales-pricing-card__price-row">
+                <span>מחיר מילואימניקים</span><span>7,000 ₪</span>
+              </p>
+              <p class="sales-pricing-card__price-row sales-pricing-card__price-row--launch">
+                <span>מחיר השקה</span><span class="sales-pricing-card__price-main">5,490 ₪</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- Track: VIP -->
+          <article class="sales-pricing-card sales-pricing-card--vip">
+            <span class="sales-pricing-card__tier sales-pricing-card__tier--vip">VIP</span>
+            <h3 class="sales-pricing-card__name">VIP</h3>
+            <p class="sales-pricing-card__tagline">למי שרוצה ליווי מקצה לקצה.</p>
+
+            <div class="sales-pricing-card__prices">
+              <p class="sales-pricing-card__price-row">
+                <span>מחיר רגיל</span><span>15,000 ₪</span>
+              </p>
+              <p class="sales-pricing-card__price-row">
+                <span>מחיר מילואימניקים</span><span>14,000 ₪</span>
+              </p>
+              <p class="sales-pricing-card__price-row sales-pricing-card__price-row--launch">
+                <span>מחיר השקה</span><span class="sales-pricing-card__price-main">11,990 ₪</span>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 10. הוכחה חברתית / המלצות ==================== -->
+    <section class="sales-section sales-testimonials" id="sales-testimonials">
+      <div class="sales-container">
+        <div class="sales-section-head">
+          <h2 class="sales-heading-lg">לקוחות מספרים</h2>
+          <!-- הבהרה: אלה כרגע המלצות לדוגמה בלבד, ולא לקוחות אמיתיים/מאומתים. יש להחליף לפני פרסום. -->
+          <p class="sales-testimonials__disclaimer">* אלה כרגע המלצות לדוגמה בלבד (placeholder content) ויוחלפו בהמלצות אמיתיות ומאומתות לפני עליית האתר לאוויר.</p>
+        </div>
+
+        <div class="sales-testimonials__grid">
+
+          <article class="sales-testimonial-card">
+            <!-- TODO: להחליף בתמונת לקוח/ה אמיתית -->
+            <img src="images/testimonials/avatar-placeholder.svg" alt="Placeholder — תמונת לקוח לדוגמה" class="sales-testimonial-card__avatar" width="72" height="72">
+            <p class="sales-testimonial-card__name">לקוח לדוגמה</p>
+            <p class="sales-testimonial-card__role">[Placeholder: תיאור קצר של הלקוח — להשלמה]</p>
+            <p class="sales-testimonial-card__quote">"לא ידעתי מאיפה להתחיל. תוך יומיים הכול היה מוכן."</p>
+          </article>
+
+          <article class="sales-testimonial-card">
+            <!-- TODO: להחליף בתמונת לקוח/ה אמיתית -->
+            <img src="images/testimonials/avatar-placeholder.svg" alt="Placeholder — תמונת לקוחה לדוגמה" class="sales-testimonial-card__avatar" width="72" height="72">
+            <p class="sales-testimonial-card__name">לקוחה לדוגמה</p>
+            <p class="sales-testimonial-card__role">[Placeholder: תיאור קצר של הלקוחה — להשלמה]</p>
+            <p class="sales-testimonial-card__quote">"חסכתם לנו המון זמן והסברתם הכול בצורה פשוטה."</p>
+          </article>
+
+          <article class="sales-testimonial-card">
+            <!-- TODO: להחליף בתמונת לקוח/ה אמיתית -->
+            <img src="images/testimonials/avatar-placeholder.svg" alt="Placeholder — תמונת לקוח לדוגמה" class="sales-testimonial-card__avatar" width="72" height="72">
+            <p class="sales-testimonial-card__name">לקוח לדוגמה</p>
+            <p class="sales-testimonial-card__role">[Placeholder: תיאור קצר של הלקוח — להשלמה]</p>
+            <p class="sales-testimonial-card__quote">"הרגשתי שיש מי שמטפל בכל הפרטים."</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 11. שאלות נפוצות ==================== -->
+    <section class="sales-section sales-faq" id="sales-faq">
+      <div class="sales-container sales-faq__inner">
+        <div class="sales-section-head">
+          <h2 class="sales-heading-lg">שאלות נפוצות</h2>
+        </div>
+
+        <div class="sales-accordion" id="sales-accordion">
+
+          <div class="sales-accordion__item">
+            <h3 class="sales-accordion__heading">
+              <button type="button" class="sales-accordion__trigger" aria-expanded="false" aria-controls="sales-faq-1" id="sales-faq-1-btn">
+                כמה זמן לוקח התהליך?
+                <svg class="sales-accordion__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="sales-accordion__panel" id="sales-faq-1" role="region" aria-labelledby="sales-faq-1-btn" hidden>
+              <p>תלוי במצב המסמכים ובדרישות הרלוונטיות. לאחר קבלת המידע הדרוש מתחילים בבדיקה.</p>
+            </div>
+          </div>
+
+          <div class="sales-accordion__item">
+            <h3 class="sales-accordion__heading">
+              <button type="button" class="sales-accordion__trigger" aria-expanded="false" aria-controls="sales-faq-2" id="sales-faq-2-btn">
+                האם אפשר לבצע הכול מרחוק?
+                <svg class="sales-accordion__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="sales-accordion__panel" id="sales-faq-2" role="region" aria-labelledby="sales-faq-2-btn" hidden>
+              <p>ברוב המקרים כן.</p>
+            </div>
+          </div>
+
+          <div class="sales-accordion__item">
+            <h3 class="sales-accordion__heading">
+              <button type="button" class="sales-accordion__trigger" aria-expanded="false" aria-controls="sales-faq-3" id="sales-faq-3-btn">
+                האם אתם מגישים את המסמכים?
+                <svg class="sales-accordion__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="sales-accordion__panel" id="sales-faq-3" role="region" aria-labelledby="sales-faq-3-btn" hidden>
+              <p>אנחנו מלווים את תהליך ההכנה וההגשה בהתאם למסלול ולדרישות הרלוונטיות.</p>
+            </div>
+          </div>
+
+          <div class="sales-accordion__item">
+            <h3 class="sales-accordion__heading">
+              <button type="button" class="sales-accordion__trigger" aria-expanded="false" aria-controls="sales-faq-4" id="sales-faq-4-btn">
+                האם יש מחיר מיוחד למילואימניקים?
+                <svg class="sales-accordion__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="sales-accordion__panel" id="sales-faq-4" role="region" aria-labelledby="sales-faq-4-btn" hidden>
+              <p>כן. קיימת הטבה ייעודית למשרתי מילואים במסלולים הרלוונטיים.</p>
+            </div>
+          </div>
+
+          <div class="sales-accordion__item">
+            <h3 class="sales-accordion__heading">
+              <button type="button" class="sales-accordion__trigger" aria-expanded="false" aria-controls="sales-faq-5" id="sales-faq-5-btn">
+                איזה מסלול מתאים לי?
+                <svg class="sales-accordion__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="sales-accordion__panel" id="sales-faq-5" role="region" aria-labelledby="sales-faq-5-btn" hidden>
+              <p>בשיחה קצרה נבין את הצורך שלכם ונכוון למסלול המתאים.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 12. סיום – CTA + טופס ==================== -->
+    <section class="sales-section sales-final" id="sales-lead-form">
+      <div class="sales-container sales-final__inner">
+        <div class="sales-final__intro">
+          <h2 class="sales-heading-lg">מוכנים לבדוק אם אתם יכולים להתחיל?</h2>
+          <p class="sales-final__subtitle">הצעד הראשון פשוט.</p>
+          <p class="sales-final__text">
+            השאירו פרטים ונבדוק יחד את הזכאות והאפשרויות הרלוונטיות עבורכם — ללא התחייבות.
+          </p>
+        </div>
+
+        <form class="sales-lead-form" id="sales-lead-form-el" novalidate>
+          <!--
+            TODO: Connect lead form to production backend / CRM
+            הטופס כרגע Frontend בלבד ואינו שולח מידע לשום שרת.
+            יש לחבר אותו בעתיד לנקודת קצה (API) או ל-CRM המתאים,
+            ולהוסיף שם את הטיפול בשליחה (fetch/XHR) בפועל בקובץ script.js
+            בפונקציה initLeadForm.
+          -->
+
+          <div class="sales-form-field">
+            <label for="sales-name">שם מלא <span aria-hidden="true">*</span></label>
+            <input type="text" id="sales-name" name="name" autocomplete="name" required>
+            <span class="sales-form-error" id="sales-name-error" role="alert"></span>
+          </div>
+
+          <div class="sales-form-field">
+            <label for="sales-phone">טלפון <span aria-hidden="true">*</span></label>
+            <input type="tel" id="sales-phone" name="phone" autocomplete="tel" required>
+            <span class="sales-form-error" id="sales-phone-error" role="alert"></span>
+          </div>
+
+          <div class="sales-form-field">
+            <label for="sales-email">אימייל</label>
+            <input type="email" id="sales-email" name="email" autocomplete="email">
+            <span class="sales-form-error" id="sales-email-error" role="alert"></span>
+          </div>
+
+          <div class="sales-form-actions">
+            <button type="submit" class="sales-btn sales-btn--primary sales-btn--lg sales-btn--block">
+              אני רוצה לבדוק את הזכאות שלי
+            </button>
+            <!-- TODO (מפתח): להחליף את ה-href במספר ה-WhatsApp האמיתי בפורמט 972XXXXXXXXX -->
+            <a href="https://wa.me/972500000000" class="sales-btn sales-btn--outline sales-btn--lg sales-btn--block sales-btn--whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2Zm5.8 14.15c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11a16.6 16.6 0 0 1-1.6-.6c-2.82-1.22-4.66-4.06-4.8-4.25-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35s.38 0 .55.01c.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.13.63-.08.17-.21.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.29.14.48.21.55.33.07.12.07.68-.17 1.36Z"/></svg>
+              שלחו לי הודעה ב-WhatsApp
+            </a>
+          </div>
+
+          <p class="sales-lead-form__success" id="sales-lead-form-success" role="status" hidden>
+            תודה! הפרטים התקבלו ונחזור אליכם בהקדם.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="sales-footer" id="sales-contact">
+    <div class="sales-container sales-footer__inner">
+      <div class="sales-footer__brand">
+        <span class="sales-footer__logo">ליווי מכירות</span>
+        <p class="sales-footer__tagline">ליווי אישי ומקצועי בדרך לקרקע באמצעות מכרזים והגרלות רמ"י.</p>
+      </div>
+
+      <div class="sales-footer__contact">
+        <!-- TODO (מפתח): להחליף בפרטי קשר סופיים -->
+        <a href="tel:0500000000" class="sales-footer__contact-item">
+          <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
+          <span>050-0000000</span>
+        </a>
+        <!-- TODO (מפתח): להחליף בכתובת אימייל סופית -->
+        <a href="mailto:info@example.com" class="sales-footer__contact-item">
+          <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm0 2 8 7 8-7"/></svg>
+          <span>info@example.com</span>
+        </a>
+        <!-- TODO (מפתח): להחליף את ה-href במספר ה-WhatsApp האמיתי בפורמט 972XXXXXXXXX -->
+        <a href="https://wa.me/972500000000" class="sales-footer__contact-item" target="_blank" rel="noopener noreferrer">
+          <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <nav class="sales-footer__links" aria-label="ניווט בפוטר">
+        <a href="#sales-how">איך זה עובד</a>
+        <a href="#sales-tracks">מסלולים</a>
+        <a href="#sales-faq">שאלות נפוצות</a>
+        <a href="#sales-lead-form" class="sales-js-scroll-to">השאירו פרטים</a>
+      </nav>
+    </div>
+
+    <div class="sales-container sales-footer__bottom">
+      <p>&copy; <span id="sales-current-year">2026</span> ליווי מכירות. כל הזכויות שמורות.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

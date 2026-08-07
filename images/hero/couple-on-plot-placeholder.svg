@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder - זוג/משפחה צעירה על מגרש, מביטים קדימה</title>
+  <desc id="desc">זוג או משפחה צעירה עומדים על מגרש ומביטים קדימה אל העתיד — לא מביטים למצלמה. אין להשתמש בתמונות טפסים/משרד/עורכי דין. מידות מומלצות: 1200x900px, פורמט WebP.</desc>
+  <rect width="1200" height="900" fill="#eef2ef"/>
+  <rect x="12" y="12" width="1176" height="876" fill="none" stroke="#1c7a5e" stroke-width="3" stroke-dasharray="14 10" rx="18"/>
+  <!-- two silhouettes facing away, looking toward the horizon -->
+  <g fill="none" stroke="#1c7a5e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="80" y1="640" x2="1120" y2="640"/>
+    <circle cx="520" cy="430" r="34"/>
+    <path d="M470 640 470 500 Q470 470 500 470 L540 470 Q570 470 570 500 L570 640"/>
+    <circle cx="640" cy="450" r="30"/>
+    <path d="M600 640 600 520 Q600 494 626 494 L654 494 Q680 494 680 520 L680 640"/>
+  </g>
+  <text x="600" y="740" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#12211c" font-weight="bold">זוג/משפחה צעירה על מגרש, מביטים קדימה</text>
+  <text x="600" y="778" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5b6560">Placeholder image — להחלפה</text>
+  <text x="600" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5b6560">לא מביטים למצלמה · לא תמונות טפסים/משרד/עו"ד</text>
+  <text x="600" y="842" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8a9490">מידות מומלצות: 1200x900 · WebP</text>
+</svg>

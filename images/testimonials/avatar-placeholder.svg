@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-labelledby="title">
+  <title id="title">Placeholder — תמונת לקוח/ה לדוגמה, להחלפה בתמונה אמיתית</title>
+  <circle cx="36" cy="36" r="35" fill="#e5f3ee" stroke="#1c7a5e" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="36" cy="29" r="12" fill="none" stroke="#1c7a5e" stroke-width="2.5"/>
+  <path d="M14 60c2-12 11-19 22-19s20 7 22 19" fill="none" stroke="#1c7a5e" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

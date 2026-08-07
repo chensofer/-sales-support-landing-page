@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder - תמונת נותן השירות</title>
+  <desc id="desc">יש להחליף בתמונה מקצועית של נותן השירות, רצוי עם רקע של שכונת וילות חדשה או אתר בנייה מודרני. מידות מומלצות: 700x900px, פורמט WebP.</desc>
+  <rect width="700" height="900" fill="#eef2ef"/>
+  <rect x="12" y="12" width="676" height="876" fill="none" stroke="#1c7a5e" stroke-width="3" stroke-dasharray="14 10" rx="18"/>
+  <g transform="translate(350,380)" fill="none" stroke="#1c7a5e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-70" y="-50" width="140" height="100" rx="10"/>
+    <circle cx="0" cy="-2" r="28"/>
+    <path d="M -40 -50 L -25 -70 L 25 -70 L 40 -50"/>
+  </g>
+  <text x="350" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#12211c" font-weight="bold">תמונת נותן השירות</text>
+  <text x="350" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5b6560">Placeholder image — להחלפה</text>
+  <text x="350" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5b6560">מומלץ: רקע שכונת וילות / אתר בנייה</text>
+  <text x="350" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8a9490">מידות מומלצות: 700x900 · WebP</text>
+</svg>
