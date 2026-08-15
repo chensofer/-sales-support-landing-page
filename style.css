@@ -75,8 +75,7 @@
 }
 
 .sales-main img,
-.sales-header img,
-.sales-footer img {
+.sales-header img {
   max-width: 100%;
   display: block;
 }
@@ -116,7 +115,8 @@
 .sales-main h1,
 .sales-main h2,
 .sales-main h3,
-.sales-header h1, .sales-footer h1 {
+.sales-header h1,
+.sales-footer h2 {
   line-height: 1.2;
   font-weight: 800;
   letter-spacing: -0.01em;
@@ -158,6 +158,17 @@
 
 .sales-section {
   padding-block: var(--sales-space-2xl);
+}
+
+/* Keeps a section's own top content clear of the sticky header on direct
+   anchor navigation (e.g. a page loaded with #sales-faq already in the
+   URL) — in-page nav clicks already offset for this in JS, via
+   getHeaderOffset() in script.js, which this value should stay in sync
+   with. */
+.sales-section,
+#sales-hero,
+#sales-contact {
+  scroll-margin-top: 112px;
 }
 
 .sales-section-head {
@@ -275,29 +286,14 @@
 .sales-header__logo {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  font-weight: 800;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: var(--sales-radius-md);
+  padding: 0.35rem 0.7rem;
 }
-.sales-header__logo-mark {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: var(--sales-color-primary);
-  color: #fff;
-  font-size: 1.1rem;
-}
-.sales-header__logo-text {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.05rem;
-  color: var(--sales-color-dark);
-}
-.sales-header__logo-text small {
-  font-weight: 400;
-  font-size: 0.7rem;
-  color: var(--sales-color-text-muted);
+.sales-header__logo-img {
+  display: block;
+  height: 84px;
+  width: auto;
 }
 
 .sales-nav {
@@ -390,8 +386,8 @@
 /* ---------- 6. Hero ---------- */
 .sales-hero {
   position: relative;
-  background: linear-gradient(180deg, #0d2a20 0%, #123d2e 60%, #163e30 100%);
-  padding-block: var(--sales-space-2xl) var(--sales-space-xl);
+  background: linear-gradient(180deg, #204b3a 0%, #295b47 60%, #2c604b 100%);
+  padding-block: var(--sales-space-xl) var(--sales-space-lg);
   overflow: hidden;
 }
 .sales-hero::before,
@@ -429,10 +425,15 @@
   color: #fff;
 }
 
-.sales-hero__title {
-  font-size: var(--sales-fs-h1);
+/* Tag+class selector so this beats .sales-main h1's text-wrap:balance on
+   specificity — otherwise "balance" quietly wins and re-enables wrapping
+   despite nowrap below (both set the same underlying text-wrap-mode). */
+h1.sales-hero__title {
+  font-size: clamp(1.4rem, 2.6vw + 0.7rem, 2.5rem);
   color: #fff;
   margin-bottom: var(--sales-space-sm);
+  white-space: nowrap;
+  text-wrap: nowrap;
 }
 
 .sales-hero__subtitle {
@@ -503,12 +504,27 @@
   }
 }
 
+.sales-hero__media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.sales-hero__image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--sales-radius-lg);
+  box-shadow: var(--sales-shadow-lg);
+}
+
 @media (min-width: 960px) {
   .sales-hero__inner {
+    flex-direction: row;
     align-items: center;
+    gap: var(--sales-space-2xl);
   }
-  .sales-hero__content {
-    max-width: 62ch;
+  .sales-hero__content,
+  .sales-hero__media {
+    flex: 1 1 50%;
   }
 }
 
@@ -558,7 +574,7 @@
   height: 26px;
 }
 .sales-card__eyebrow {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--sales-color-primary);
   margin-bottom: 0.3rem;
@@ -567,6 +583,14 @@
   font-size: var(--sales-fs-h3);
   margin-bottom: 0.4rem;
   color: var(--sales-color-dark);
+}
+/* The why-us cards pair an eyebrow with an h3 title — sized down here (not
+   in the shared .sales-card__title rule, which the audience cards above
+   also use) to match the body text below it, staying bold via the
+   .sales-main h3 rule so it still reads as a heading, just no longer the
+   dominant line — the green eyebrow is meant to lead. */
+.sales-why-us__card .sales-card__title {
+  font-size: 0.95rem;
 }
 .sales-card__text {
   color: var(--sales-color-text-muted);
@@ -705,13 +729,16 @@
   height: 20px;
 }
 .sales-timeline__eyebrow {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--sales-color-primary);
   margin-bottom: 0.2rem;
 }
+/* Sized to match .sales-timeline__text below it, same treatment as the
+   why-us cards' .sales-card__title — stays bold via the .sales-main h3
+   rule, but the green eyebrow above it is the line meant to lead. */
 .sales-timeline__title {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   color: var(--sales-color-dark);
 }
 .sales-timeline__text {
@@ -766,63 +793,130 @@
   line-height: 1.5;
 }
 
+.sales-tenders__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sales-space-lg);
+  margin-bottom: var(--sales-space-lg);
+}
+.sales-tenders__head {
+  margin: 0;
+  text-align: start;
+}
+/* .sales-audience__intro is reused here from the audience section, which
+   centers it — override just this instance so it follows the rest of
+   this heading block instead. */
+.sales-tenders__head .sales-audience__intro {
+  text-align: start;
+}
+@media (min-width: 900px) {
+  .sales-tenders__top {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--sales-space-2xl, 3rem);
+  }
+  .sales-tenders__head {
+    flex: 1;
+    max-width: 480px;
+  }
+}
+
 .sales-tenders__map-wrap {
   position: relative;
-  margin-bottom: var(--sales-space-lg);
-  border-radius: var(--sales-radius-lg);
-  overflow: hidden;
-  box-shadow: var(--sales-shadow-md);
+  /* Israel's outline is tall and narrow — sizing the wrap to roughly its real
+     proportions keeps the whole country visible without the map spilling
+     into a wide box full of empty (masked) sea/border padding on the sides. */
+  width: min(300px, 100%);
+  height: 620px;
+  margin: 0 auto;
+  flex: none;
+}
+@media (min-width: 700px) {
+  .sales-tenders__map-wrap {
+    width: min(340px, 100%);
+    height: 700px;
+  }
 }
 .sales-tenders__map {
   width: 100%;
-  height: 560px;
+  height: 100%;
   background: var(--sales-color-border);
   direction: ltr;
-}
-@media (min-width: 700px) {
-  .sales-tenders__map {
-    height: 640px;
-  }
+  border-radius: var(--sales-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--sales-shadow-md);
 }
 
 .sales-tenders__map .sales-tenders__map-mask {
   fill-rule: evenodd;
 }
 
-/* Leaflet element overrides — kept scoped to this map instance */
-.sales-tenders__map .leaflet-tooltip.sales-tenders__map-label {
-  background: var(--sales-color-dark);
-  color: #fff;
+/* Plain English city-name labels (see initTendersMap) — stripped of
+   Leaflet's default tooltip box/arrow so it reads as map text, not a
+   callout bubble. */
+.sales-tenders__map .sales-tenders__map-city-label {
+  background: none;
   border: none;
-  border-radius: 999px;
-  padding: 0.25rem 0.7rem;
+  box-shadow: none;
+  padding: 0;
   font-family: var(--sales-font-base);
+  font-size: 0.68rem;
   font-weight: 700;
-  font-size: 0.8rem;
-  box-shadow: var(--sales-shadow-sm);
-  cursor: pointer;
-  pointer-events: auto;
+  color: #33463d;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+  pointer-events: none;
 }
-.sales-tenders__map .leaflet-tooltip-top.sales-tenders__map-label::before {
-  border-top-color: var(--sales-color-dark);
+.sales-tenders__map .sales-tenders__map-city-label::before {
+  display: none;
 }
-.sales-tenders__map .leaflet-tooltip-bottom.sales-tenders__map-label::before {
-  border-bottom-color: var(--sales-color-dark);
+
+/* Our own popup panel — positioned in pixel space via JS (initTendersMap),
+   independent of Leaflet's built-in Popup so we control edge behavior.
+   Rendered as a fixed-position element appended directly to <body> (moved
+   there in JS) rather than nested inside the map: Leaflet's map pane is
+   GPU-transformed for panning, which was silently painting the map's own
+   tiles/overlay layer above this panel despite its z-index — moving it out
+   of that subtree avoids the compositing conflict entirely. */
+.sales-tenders__popup,
+.sales-tenders__popup * {
+  /* The site-wide box-sizing:border-box reset only reaches descendants of
+     .sales-main/.sales-header — now that this panel lives directly under
+     <body>, it needs its own, or the button's padding gets added on top of
+     its 100% width instead of eaten from it, pushing it wider than the
+     card and out past its edge. */
+  box-sizing: border-box;
 }
-.sales-tenders__map .leaflet-popup-content-wrapper {
+.sales-tenders__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 240px;
+  /* Sized against the viewport, not the (now narrow) map wrap — otherwise
+     the popup gets squeezed down to the wrap's width and its content wraps
+     awkwardly. */
+  max-width: min(240px, calc(100vw - 2rem));
+  background: #fff;
   border-radius: var(--sales-radius-md);
-}
-.sales-tenders__map .leaflet-popup-content {
-  margin: 1.1rem 1.3rem;
-  font-family: var(--sales-font-base);
+  box-shadow: var(--sales-shadow-lg);
+  padding: 1rem 1.2rem;
   direction: rtl;
   text-align: start;
-  min-width: 190px;
+  font-family: var(--sales-font-base);
 }
-.sales-tenders__map a.leaflet-popup-close-button {
+.sales-tenders__popup-close {
+  position: absolute;
   top: 0.5rem;
-  inset-inline-end: 0.5rem;
-  inset-inline-start: auto;
+  inset-inline-end: 0.6rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--sales-color-text-muted);
+  cursor: pointer;
+  padding: 0.2rem;
 }
 .sales-tenders__popup-city {
   font-weight: 800;
@@ -1028,14 +1122,6 @@
   border-color: var(--sales-color-primary);
   box-shadow: var(--sales-shadow-lg);
 }
-@media (min-width: 960px) {
-  .sales-pricing-card--featured {
-    transform: translateY(-14px);
-  }
-  .sales-pricing-card--featured:hover {
-    transform: translateY(-20px);
-  }
-}
 .sales-pricing-card__badge {
   position: absolute;
   top: -14px;
@@ -1221,36 +1307,34 @@
 .sales-footer {
   background: var(--sales-color-dark);
   color: var(--sales-color-text-on-dark-muted);
-  padding-block: var(--sales-space-xl) var(--sales-space-md);
+  padding-block: var(--sales-space-xl);
 }
 .sales-footer__inner {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sales-space-lg);
-  padding-bottom: var(--sales-space-lg);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
 }
-.sales-footer__logo {
-  font-weight: 800;
-  font-size: 1.2rem;
+.sales-footer__heading {
   color: #fff;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-.sales-footer__tagline {
-  max-width: 40ch;
-  font-size: 0.9rem;
+  font-size: var(--sales-fs-h3);
+  margin-bottom: var(--sales-space-md);
 }
 .sales-footer__contact {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  max-width: 420px;
+  margin-inline: auto;
+}
+@media (min-width: 640px) {
+  .sales-footer__contact {
+    flex-direction: row;
+    max-width: none;
+  }
 }
 .sales-footer__contact-item {
+  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
   padding: 0.75rem 1rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1262,20 +1346,6 @@
   background: rgba(255, 255, 255, 0.08);
   transform: translateY(-2px);
 }
-.sales-footer__contact-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-.sales-footer__contact-label {
-  font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.55);
-}
-.sales-footer__contact-value {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #fff;
-}
 .sales-footer__contact-icon {
   display: grid;
   place-items: center;
@@ -1286,27 +1356,20 @@
   background: rgba(28, 122, 94, 0.35);
   color: var(--sales-color-accent-light);
 }
-.sales-footer__links {
+.sales-footer__contact-text {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  font-size: 0.92rem;
+  gap: 0.15rem;
+  text-align: start;
 }
-.sales-footer__links a:hover {
-  color: var(--sales-color-accent-light);
+.sales-footer__contact-label {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.55);
 }
-.sales-footer__bottom {
-  padding-top: var(--sales-space-md);
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--sales-color-text-on-dark-muted);
-}
-
-@media (min-width: 760px) {
-  .sales-footer__inner {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.sales-footer__contact-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
 }
 
 /* ---------- 20. Utility: reduced motion ---------- */

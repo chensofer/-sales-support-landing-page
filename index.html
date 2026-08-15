@@ -25,18 +25,14 @@
   <header class="sales-header" id="sales-header">
     <div class="sales-container sales-header__inner">
       <a href="#sales-hero" class="sales-header__logo">
-        <span class="sales-header__logo-mark" aria-hidden="true">ל</span>
-        <span class="sales-header__logo-text">
-          ליווי רכישת קרקעות לבנייה
-          <small>קרקע · בית · עתיד</small>
-        </span>
+        <img src="images/branding/dror-logo.png" alt="דרור בונים עתיד" class="sales-header__logo-img">
       </a>
 
       <nav class="sales-nav" id="sales-nav" aria-label="ניווט ראשי">
         <ul class="sales-nav__list">
           <li><a href="#sales-tenders" class="sales-nav__link sales-js-scroll-to">מכרזים פעילים</a></li>
           <li><a href="#sales-faq" class="sales-nav__link">שאלות נפוצות</a></li>
-          <li><a href="#sales-contact" class="sales-nav__link">צור קשר</a></li>
+          <li><a href="#sales-contact" class="sales-nav__link">צרו קשר</a></li>
         </ul>
       </nav>
 
@@ -55,7 +51,7 @@
       <ul class="sales-mobile-nav__list">
         <li><a href="#sales-tenders" class="sales-mobile-nav__link sales-js-scroll-to">מכרזים פעילים</a></li>
         <li><a href="#sales-faq" class="sales-mobile-nav__link">שאלות נפוצות</a></li>
-        <li><a href="#sales-contact" class="sales-mobile-nav__link">צור קשר</a></li>
+        <li><a href="#sales-contact" class="sales-mobile-nav__link">צרו קשר</a></li>
         <li><a href="#sales-lead-form" class="sales-btn sales-btn--primary sales-btn--block sales-js-scroll-to">בדקו זכאות</a></li>
       </ul>
     </nav>
@@ -69,7 +65,7 @@
 
         <div class="sales-hero__content">
           <h1 class="sales-hero__title">
-            החלום שלכם- הליווי שלנו.
+            החלום שלכם - הליווי שלנו
           </h1>
           <p class="sales-hero__subtitle">
             אתם מתמקדים בעתיד... ואנו דואגים לתהליך.
@@ -115,6 +111,15 @@
           <p class="sales-hero__caption">השאירו פרטים ונחזור אליכם לשיחה ראשונית.</p>
         </div>
 
+        <div class="sales-hero__media">
+          <img
+            src="images/hero/couple-with-plan.png"
+            alt="זוג מחזיק תוכנית בנייה ומביט לעבר המגרש"
+            class="sales-hero__image"
+            width="1536" height="1024"
+          >
+        </div>
+
       </div>
     </section>
 
@@ -122,7 +127,7 @@
     <section class="sales-section sales-audience" id="sales-audience">
       <div class="sales-container">
         <div class="sales-section-head">
-          <h2 class="sales-heading-lg">אתם כבר בדרך לעתיד / לקרקע משלכם...</h2>
+          <h2 class="sales-heading-lg">אתם כבר בדרך לקרקע משלכם...</h2>
           <p class="sales-audience__intro">השירות מיועד ל:</p>
         </div>
 
@@ -140,7 +145,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 4h16v16H4V4Zm4 4h8M8 12h8M8 16h5"/></svg>
             </div>
             <p class="sales-card__title">משקיעים</p>
-            <p class="sales-card__text">קרקע פרטית לבנייה עם אפשרות להחזיק או לממש בעתיד</p>
+            <p class="sales-card__text">קרקע פרטית לבנייה מיידית או למימוש עתידי</p>
           </div>
 
           <div class="sales-card sales-audience__card">
@@ -148,7 +153,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 8v4l3 2M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z"/></svg>
             </div>
             <p class="sales-card__title">אנשים עסוקים</p>
-            <p class="sales-card__text">חוסכים את הבירוקרטיה והזמן</p>
+            <p class="sales-card__text">חוסכים זמן ובירוקרטיה</p>
           </div>
 
           <div class="sales-card sales-audience__card">
@@ -171,10 +176,7 @@
           </p>
           <h2 class="sales-heading-lg sales-heading-lg--light">משרתים במילואים?</h2>
           <p class="sales-reservists__text">
-            זמנכם יקר — שירות, עבודה ומשפחה — אתם תתמקדו במה שחשוב ואנו נדאג לכל השאר.
-          </p>
-          <p class="sales-reservists__text">
-            לכן בנינו עבורכם מסלול עם מעטפת מיוחדת — ליווי אישי, מחיר מיוחד והטבות חד פעמיות למשרתי המילואים.
+            בנינו עבורכם מסלול עם מעטפת מיוחדת — ליווי אישי, מחיר מיוחד והטבות חד פעמיות למשרתי המילואים.
           </p>
           <p class="sales-reservists__tag">
             אתם מתמקדים במה שחשוב.<br>אנו דואגים לשאר.
@@ -184,12 +186,11 @@
           </a>
         </div>
         <div class="sales-reservists__media">
-          <!-- TODO: להחליף בתמונה אמיתית — images/sections/reservist-family-placeholder.svg -->
           <img
-            src="images/sections/reservist-family-placeholder.svg"
-            alt="משרת מילואים חוזר הביתה למשפחתו"
+            src="images/sections/reservist-family.png"
+            alt="משרת מילואים עומד עם משפחתו וכלב המשפחה מול שכונת מגורים חדשה, לצד שלט תוכנית לבניית בית פרטי"
             class="sales-reservists__image"
-            width="1200" height="800" loading="lazy"
+            width="1689" height="931" loading="lazy"
           >
         </div>
       </div>
@@ -199,7 +200,7 @@
     <section class="sales-section sales-why-us" id="sales-why-us">
       <div class="sales-container">
         <div class="sales-section-head">
-          <h2 class="sales-heading-lg">למה לבחור בנו?</h2>
+          <h2 class="sales-heading-lg">למה לבחור בנו&nbsp;?</h2>
         </div>
 
         <div class="sales-why-us__grid">
@@ -317,19 +318,26 @@
     <!-- ==================== 8.5. המכרזים הקרובים ==================== -->
     <section class="sales-section sales-tenders" id="sales-tenders">
       <div class="sales-container">
-        <div class="sales-section-head">
-          <h2 class="sales-heading-lg">המכרזים הקרובים</h2>
-          <p class="sales-tenders__hook">
-            רואים מכרז שמעניין אתכם? אל תתקדמו לבד.<br>
-            אנחנו נבדוק עבורכם את תנאי המכרז, הקרקע והמסמכים ונעזור לכם להבין אם ההזדמנות מתאימה לכם.
-          </p>
-          <p class="sales-audience__intro">
-            מפה אינטראקטיבית המציגה מכרזי קרקע רלוונטיים ברחבי הארץ, כדי שתוכלו לראות מה נפתח, איפה ומתי.
-          </p>
-        </div>
+        <div class="sales-tenders__top">
+          <div class="sales-section-head sales-tenders__head">
+            <h2 class="sales-heading-lg">המכרזים הקרובים</h2>
+            <p class="sales-tenders__hook">
+              רואים מכרז שמעניין אתכם? אל תתקדמו לבד.<br>
+              אנחנו נבדוק עבורכם את תנאי המכרז, הקרקע והמסמכים ונעזור לכם להבין אם ההזדמנות מתאימה לכם.
+            </p>
+            <p class="sales-audience__intro">
+              מפה אינטראקטיבית המציגה מכרזי קרקע רלוונטיים ברחבי הארץ, כדי שתוכלו לראות מה נפתח, איפה ומתי.
+            </p>
+          </div>
 
-        <div class="sales-tenders__map-wrap">
-          <div id="sales-tenders-map" class="sales-tenders__map" role="img" aria-label="מפת ישראל עם מיקומי המכרזים הפעילים"></div>
+          <div class="sales-tenders__map-wrap">
+            <div id="sales-tenders-map" class="sales-tenders__map" role="img" aria-label="מפת ישראל עם מיקומי המכרזים הפעילים"></div>
+            <div class="sales-tenders__popup" id="sales-tenders-popup" hidden>
+              <button type="button" class="sales-tenders__popup-close" aria-label="סגירת פרטי המכרז">×</button>
+              <p class="sales-tenders__popup-city"></p>
+              <div class="sales-tenders__popup-body"></div>
+            </div>
+          </div>
         </div>
 
         <div class="sales-tenders__filters" role="group" aria-label="סינון המכרזים לפי אזור">
@@ -350,21 +358,18 @@
                   <p class="sales-tenders__item-place">שלומי, חמודות</p>
                   <p class="sales-tenders__item-date">מועד אחרון להגשה: 16.11.2026</p>
                 </div>
-                <a href="#sales-lead-form" class="sales-btn sales-btn--outline sales-btn--sm sales-js-scroll-to">חוברת מכרז</a>
               </li>
               <li class="sales-tenders__item" data-city="שלומי">
                 <div class="sales-tenders__item-info">
                   <p class="sales-tenders__item-place">שלומי, חמודות</p>
                   <p class="sales-tenders__item-date">מועד אחרון להגשה: 23.11.2026</p>
                 </div>
-                <a href="#sales-lead-form" class="sales-btn sales-btn--outline sales-btn--sm sales-js-scroll-to">חוברת מכרז</a>
               </li>
               <li class="sales-tenders__item" data-city="בית ג'אן">
                 <div class="sales-tenders__item-info">
                   <p class="sales-tenders__item-place">בית ג'אן, גבעה מערבית</p>
                   <p class="sales-tenders__item-date">מועד אחרון להגשה: 26.10.2026</p>
                 </div>
-                <a href="#sales-lead-form" class="sales-btn sales-btn--outline sales-btn--sm sales-js-scroll-to">חוברת מכרז</a>
               </li>
             </ul>
           </div>
@@ -377,21 +382,18 @@
                   <p class="sales-tenders__item-place">ירוחם, חלמונית</p>
                   <p class="sales-tenders__item-date">מועד אחרון להגשה: 31.08.2026</p>
                 </div>
-                <a href="#sales-lead-form" class="sales-btn sales-btn--outline sales-btn--sm sales-js-scroll-to">חוברת מכרז</a>
               </li>
               <li class="sales-tenders__item" data-city="מצפה רמון">
                 <div class="sales-tenders__item-info">
                   <p class="sales-tenders__item-place">מצפה רמון, מגשימים מעוף</p>
                   <p class="sales-tenders__item-date">מועד אחרון להגשה: 31.08.2026</p>
                 </div>
-                <a href="#sales-lead-form" class="sales-btn sales-btn--outline sales-btn--sm sales-js-scroll-to">חוברת מכרז</a>
               </li>
               <li class="sales-tenders__item" data-city="להבים">
                 <div class="sales-tenders__item-info">
                   <p class="sales-tenders__item-place">להבים</p>
                   <p class="sales-tenders__item-date">מועד אחרון להגשה: 02.11.2026</p>
                 </div>
-                <a href="#sales-lead-form" class="sales-btn sales-btn--outline sales-btn--sm sales-js-scroll-to">חוברת מכרז</a>
               </li>
             </ul>
           </div>
@@ -658,54 +660,37 @@
   <!-- ==================== Footer ==================== -->
   <footer class="sales-footer" id="sales-contact">
     <div class="sales-container sales-footer__inner">
-      <div class="sales-footer__brand">
-        <span class="sales-footer__logo">ליווי רכישת קרקעות לבנייה</span>
-        <p class="sales-footer__tagline">ליווי אישי ומקצועי בדרך לקרקע באמצעות מכרזים והגרלות רמ"י.</p>
-      </div>
+      <h2 class="sales-footer__heading">צרו קשר</h2>
 
       <div class="sales-footer__contact">
-        <!-- TODO (מפתח): להחליף בפרטי קשר סופיים -->
-        <a href="tel:0500000000" class="sales-footer__contact-item">
-          <span class="sales-footer__contact-text">
-            <span class="sales-footer__contact-label">טלפון</span>
-            <span class="sales-footer__contact-value">050-0000000</span>
-          </span>
+        <a href="tel:0547032333" class="sales-footer__contact-item">
           <span class="sales-footer__contact-icon">
             <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
           </span>
-        </a>
-        <!-- TODO (מפתח): להחליף בכתובת אימייל סופית -->
-        <a href="mailto:info@example.com" class="sales-footer__contact-item">
           <span class="sales-footer__contact-text">
-            <span class="sales-footer__contact-label">מייל</span>
-            <span class="sales-footer__contact-value">info@example.com</span>
+            <span class="sales-footer__contact-label">אלון</span>
+            <span class="sales-footer__contact-value">054-7032333</span>
           </span>
+        </a>
+        <a href="tel:0528052550" class="sales-footer__contact-item">
+          <span class="sales-footer__contact-icon">
+            <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
+          </span>
+          <span class="sales-footer__contact-text">
+            <span class="sales-footer__contact-label">עמית</span>
+            <span class="sales-footer__contact-value">052-8052550</span>
+          </span>
+        </a>
+        <a href="mailto:Elonba5@gmail.com" class="sales-footer__contact-item">
           <span class="sales-footer__contact-icon">
             <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm0 2 8 7 8-7"/></svg>
           </span>
-        </a>
-        <!-- TODO (מפתח): להחליף את ה-href במספר ה-WhatsApp האמיתי בפורמט 972XXXXXXXXX -->
-        <a href="https://wa.me/972500000000" class="sales-footer__contact-item" target="_blank" rel="noopener noreferrer">
           <span class="sales-footer__contact-text">
-            <span class="sales-footer__contact-label">וואטסאפ</span>
-            <span class="sales-footer__contact-value">050-0000000</span>
-          </span>
-          <span class="sales-footer__contact-icon">
-            <svg class="sales-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2Zm5.8 14.15c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11a16.6 16.6 0 0 1-1.6-.6c-2.82-1.22-4.66-4.06-4.8-4.25-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35s.38 0 .55.01c.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.13.63-.08.17-.21.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.29.14.48.21.55.33.07.12.07.68-.17 1.36Z"/></svg>
+            <span class="sales-footer__contact-label">מייל</span>
+            <span class="sales-footer__contact-value">Elonba5@gmail.com</span>
           </span>
         </a>
       </div>
-
-      <nav class="sales-footer__links" aria-label="ניווט בפוטר">
-        <a href="#sales-how">איך זה עובד</a>
-        <a href="#sales-tracks">מסלולים</a>
-        <a href="#sales-faq">שאלות נפוצות</a>
-        <a href="#sales-lead-form" class="sales-js-scroll-to">השאירו פרטים</a>
-      </nav>
-    </div>
-
-    <div class="sales-container sales-footer__bottom">
-      <p>&copy; <span id="sales-current-year">2026</span> ליווי רכישת קרקעות לבנייה. כל הזכויות שמורות.</p>
     </div>
   </footer>
 
