@@ -213,7 +213,13 @@
   font-size: var(--sales-fs-body);
   cursor: pointer;
   transition: transform var(--sales-transition), box-shadow var(--sales-transition), background var(--sales-transition), color var(--sales-transition), border-color var(--sales-transition);
-  white-space: nowrap;
+  /* normal (not nowrap) so long CTA labels wrap instead of forcing the
+     button — and the page — wider than narrow phone screens; min-width:0
+     lets it actually shrink below its content's natural width when a
+     parent constrains it (e.g. width:100%), which inline-flex resists by
+     default. Short labels are unaffected since they never need to wrap. */
+  white-space: normal;
+  min-width: 0;
 }
 .sales-btn:hover {
   transform: translateY(-2px);
@@ -429,7 +435,7 @@
    specificity — otherwise "balance" quietly wins and re-enables wrapping
    despite nowrap below (both set the same underlying text-wrap-mode). */
 h1.sales-hero__title {
-  font-size: clamp(1.4rem, 2.6vw + 0.7rem, 2.5rem);
+  font-size: clamp(1.15rem, 2.6vw + 0.7rem, 2.5rem);
   color: #fff;
   margin-bottom: var(--sales-space-sm);
   white-space: nowrap;
